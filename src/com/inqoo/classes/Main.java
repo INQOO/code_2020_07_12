@@ -3,7 +3,7 @@ package com.inqoo.classes;
 public class Main {
 
     public static void main(String[] args) {
-       Car bmw = new Car("BMW", "3", false,2010, 2.0, "blue");
+        Car bmw = new Car("BMW", "3", 2010, 2.0, "blue");
 
         System.out.println("Mam nowy samochód: " + bmw.getBrand() + " " + bmw.getModel());
         System.out.println("Ma bardzo mocny silnik " + bmw.getEngine() + "L");
@@ -17,8 +17,6 @@ public class Main {
         bmw.turnEngineOn();
         System.out.println(bmw.isEngineRunning());
         bmw.turnEngineOff();
-
-
 
     }
 }
