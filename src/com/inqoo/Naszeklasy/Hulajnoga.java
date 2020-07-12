@@ -4,29 +4,18 @@ import org.w3c.dom.ls.LSOutput;
 
 public class Hulajnoga {
 
+    public String color;
     String model;
     String brand;
-    private int year;
-    private String color;
-    boolean Czyjezdzi;
+    int year;
+    boolean czyJezdzi;
 
-    public Hulajnoga(String model, String brand, int year, String color, boolean czyjezdzi) {
+    public Hulajnoga(String model, String brand, int year, String color, boolean czyJezdzi) {
         this.model = model;
         this.brand = brand;
         this.year = year;
         this.color = color;
-        Czyjezdzi = czyjezdzi;
-    }
-
-    public static void main(String[] args) {
-        Hulajnoga Karolina = new Hulajnoga("Pro",
-                "Xiaomi",
-                2020,
-                "red",
-                false);
-        System.out.println("Mam nową " + Karolina.brand + " w kolorze " + Karolina.color);
-
-
+        this.czyJezdzi = czyJezdzi;
     }
 
 }
