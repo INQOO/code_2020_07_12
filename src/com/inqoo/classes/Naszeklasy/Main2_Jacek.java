@@ -1,6 +1,6 @@
-package com.inqoo.classes;
+package com.inqoo.classes.Naszeklasy;
 
-import com.inqoo.classes.naszeklasy.Laptop;
+import com.inqoo.classes.Naszeklasy.Laptop;
 
 public class Main2_Jacek {
     public static void main(String[] args) {
