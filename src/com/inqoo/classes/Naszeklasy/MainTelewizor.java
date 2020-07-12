@@ -1,6 +1,6 @@
-package com.inqoo.classes;
+package com.inqoo.classes.Naszeklasy;
 
-import com.inqoo.classes.naszeklasy.Telewizor;
+import com.inqoo.classes.Naszeklasy.Telewizor;
 
 public class MainTelewizor {
     public static void main(String[] args) {

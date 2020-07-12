@@ -1,4 +1,4 @@
-package com.inqoo.Naszeklasy;
+package com.inqoo.classes.Naszeklasy;
 
 import org.w3c.dom.ls.LSOutput;
 
@@ -16,6 +16,6 @@ public class Hulajnoga {
         this.year = year;
         this.color = color;
         this.czyJezdzi = czyJezdzi;
-    }
 
-}
+    }}
+
