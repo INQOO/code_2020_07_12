@@ -11,12 +11,16 @@ public class Car {
 
     private boolean engineRunning; // czy silnik jest włączony
 
-    public Car(String brand, String model, int year, double engine, String color) {
+    public Car(){ }
+
+    public Car(String brand, String model,boolean engineRunning, int year, double engine, String color) {
+        this.engineRunning = engineRunning;
         this.brand = brand;
         this.model = model;
         this.year = year;
         this.engine = engine;
         this.color = color;
+
     }
 
     public void turnEngineOn() {
