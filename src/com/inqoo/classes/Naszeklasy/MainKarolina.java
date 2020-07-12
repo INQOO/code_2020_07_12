@@ -1,4 +1,6 @@
-package com.inqoo.Naszeklasy;
+package com.inqoo.classes.Naszeklasy;
+
+import com.inqoo.classes.Naszeklasy.Hulajnoga;
 
 public class MainKarolina {
     public static void main(String[] args) {
