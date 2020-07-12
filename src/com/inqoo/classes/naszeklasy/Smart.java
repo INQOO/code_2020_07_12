@@ -1,10 +1,10 @@
 package com.inqoo.classes.naszeklasy;
 
 public class Smart {
-    private String brand;
-    private String model;
-    private int year;
-    private String color;
+    public String brand;
+    public String model;
+    public int year;
+    public String color;
 
     public Smart (String brand, String model, int year, String color){
         this.brand = brand;
