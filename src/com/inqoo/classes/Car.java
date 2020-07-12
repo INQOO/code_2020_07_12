@@ -2,14 +2,22 @@ package com.inqoo.classes;
 
 public class Car {
 
-    String brand; // marka
-    String model; // model
+    private String brand; // marka
+    private String model; // model
 
     private int year;     // rok produkcji
     private double engine; // pojemność silnika w litrach
     private String color; // kolor
 
     private boolean engineRunning; // czy silnik jest włączony
+
+    public Car(String brand, String model, int year, double engine, String color) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+        this.engine = engine;
+        this.color = color;
+    }
 
     public void turnEngineOn() {
         this.engineRunning = true;
