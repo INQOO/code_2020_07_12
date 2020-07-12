@@ -19,6 +19,8 @@ public class Car {
         this.color = color;
     }
 
+    public Car() { }
+
     public void turnEngineOn() {
         this.engineRunning = true;
         System.out.println("Silnik włączony!");

@@ -1,17 +1,17 @@
 package com.inqoo.classes;
 
+
 import com.inqoo.classes.naszeklasy.Komputer;
 
 public class MainPawel {
     public static void main(String[] args) {
         Car twingo = new Car("Renault",
-                "Twingo",
-                false,
-                2011,
+                "Twingo", 2011,
                 3.2,
                 "różowy");
 
         Car opelAgila = new Car();
+
         String opelAgilaModel = opelAgila.getModel();
 
         System.out.println(opelAgila.getYear());
