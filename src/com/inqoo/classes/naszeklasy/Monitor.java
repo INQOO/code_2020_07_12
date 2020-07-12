@@ -2,7 +2,6 @@ package com.inqoo.classes.naszeklasy;
 
 public class Monitor {
 
-
     private String firma;
     private String rozdzielczosc;
     private int przekatna;
