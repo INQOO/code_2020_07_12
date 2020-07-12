@@ -9,7 +9,8 @@ public class Telewizor {
     public Telewizor(String marka, String kolor, int rozdzielczosc) {
         this.marka = marka;
         this.kolor = kolor;
-        this.rozdzielczosc = rozdzielczosc; }
+        this.rozdzielczosc = rozdzielczosc;
+    }
 
     public static void main(String[] args) {
 
@@ -19,7 +20,7 @@ public class Telewizor {
         System.out.println(panasonic);
         System.out.println(lg);
     }
-    }
+}
 
 
 
