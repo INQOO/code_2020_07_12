@@ -5,15 +5,15 @@ import org.w3c.dom.ls.LSOutput;
 public class Klasa1a {
 
 
-    private String szkoła;
+    private String szkola;
     private String klasaa;
     private int rocznik;
     private double uczniowie;
     String ulubionycolor;
     private boolean biolchem;
 
-    public Car(String szkoła, String klasaa, int rocznik, double ucznowie, String ulubionycolor, boolean biolchem);
-    this.szkoła = szkoła;
+    public Car(String szkola, String klasaa, int rocznik, double ucznowie, String ulubionycolor, boolean biolchem);
+    this.szkola = szkola;
     this.klasaa = klasaa;
     this. rocznik = rocznik;
     this.uczniowie = uczniowie;
