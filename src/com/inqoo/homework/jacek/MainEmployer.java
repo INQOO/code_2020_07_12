@@ -2,6 +2,8 @@ package com.inqoo.homework.jacek;
 
 import org.w3c.dom.ls.LSOutput;
 
+import java.math.BigDecimal;
+
 public class MainEmployer {
 
     public static void main(String[] args) {
@@ -9,10 +11,13 @@ public class MainEmployer {
         Employee employee2 = new Employee("Karina", 25, "Secretary");
         Employee employee3 = new Employee("Olaf", 29, "Supervisor");
 
-        System.out.println(employee1.getName());
-        System.out.println(employee2.getPosition());
-        System.out.println(employee3.getAge());
+        employee1.increaseSalary(new BigDecimal("500"));
+        System.out.println("Wynagrodzenie pracownika " + employee1.getName() + " wynosi: " + employee1.getSalary());
 
+        employee2.decreaseSalary(new BigDecimal("300"));
+        employee2.addBonus();
+        System.out.println("Wynagrodzenie pracownika " + employee2.getName() + " wynosi: " + employee2.getSalary());
+
+        System.out.println(employee3.toString());
     }
-
 }

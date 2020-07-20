@@ -3,13 +3,11 @@ package com.inqoo.homework.jacek;
 import java.math.BigDecimal;
 
 public class Employee {
-    String name;
-    int age;
-    String position;
+    public String name;
+    public int age;
+    public String position;
     public BigDecimal salary = new BigDecimal("3000");
     public static final double bonus = 1.2;
-    public int addBonus =;
-
 
     public Employee(String name, int age, String position){
         this.name = name;
@@ -17,8 +15,39 @@ public class Employee {
         this.position = position;
     }
 
-    public String getName() {return name; }
-    public int getAge() {return age;}
-    public String getPosition() {return position;}
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void increaseSalary(BigDecimal amount){
+        salary = salary.add(amount);
+    }
+
+    public void decreaseSalary(BigDecimal amount){
+        salary = salary.subtract(amount);
+    }
+
+    public void addBonus() {
+        salary = new BigDecimal(bonus).multiply(salary).setScale(2, BigDecimal.ROUND_HALF_DOWN);
+    }
+
+    public BigDecimal getSalary(){
+        return salary;
+    }
+
+    public String toString(){
+        return "Imie pracownika: " + name
+                + ", lat: " + age
+                + ", na stanowisku: " + position
+                + ", otrzymał wynagrodzenie: " + salary;
+    }
 }
 
