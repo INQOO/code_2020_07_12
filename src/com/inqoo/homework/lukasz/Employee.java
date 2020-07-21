@@ -2,28 +2,30 @@ package com.inqoo.homework.lukasz;
 
 import java.math.BigDecimal;
 
-public class Employee {
+  class Employee {
 
     private String name;
     private int age;
     private BigDecimal salary = new BigDecimal(3000);
 
-    public static final BigDecimal bonus = BigDecimal.valueOf(1.2);
+     private static final BigDecimal bonus = BigDecimal.valueOf(1.2);
 
-    public BigDecimal increaseSalary(BigDecimal amount) {
-        return salary = amount.add(this.salary);
+     BigDecimal increaseSalary(BigDecimal amount) {
+
+         return salary = salary.add(amount);
     }
 
-    public BigDecimal decreaseSalary(BigDecimal amount){
-          return salary = this.salary.subtract(amount);
+     BigDecimal decreaseSalary(BigDecimal amount){
+         return salary = salary.subtract(amount);
     }
 
-    public BigDecimal addBonus(){
-        return this.salary = this.salary.multiply(bonus);
+     BigDecimal addBonus(){
+
+         return salary = salary.multiply(bonus);
     }
 
-    public BigDecimal getSalary(){
-        return this.salary;
+     void getSalary(){
+         System.out.println(salary);
     }
 
     Employee(String name, int age) {
@@ -31,7 +33,7 @@ public class Employee {
         this.age = age;
     }
 
-  public  String toString(){
+    public String toString(){
         return "Imie: " + name + ", Wiek: " + age + ", Wypłata: " + salary;
   }
 }
