@@ -2,7 +2,7 @@ package com.inqoo.homework.jacek;
 
 import java.math.BigDecimal;
 
-public class MainEmployer {
+class MainEmployer {
 
     public static void main(String[] args) {
         Employee employee1 = new Employee("Jacek", 36, "Advisor");
